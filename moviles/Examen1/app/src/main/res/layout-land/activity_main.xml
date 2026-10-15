@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.examen1.MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineTaskMateHor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.04"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineTaskMateVert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TaskMate"
+        android:id="@+id/TaskMate"
+        app:layout_constraintBottom_toBottomOf="@id/guidelineTaskMateHor"
+        app:layout_constraintEnd_toEndOf="@id/guidelineTaskMateHor"
+        app:layout_constraintStart_toStartOf="@id/guidelineTaskMateVert"
+        app:layout_constraintTop_toTopOf="@id/guidelineTaskMateHor"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineSaludoVert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineSaludoHor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent" />
+
+
+    <TextView
+        android:id="@+id/saludoPersona"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hola, Ana"
+        app:layout_constraintBottom_toBottomOf="@id/guidelineSaludoHor"
+        app:layout_constraintEnd_toEndOf="@id/guidelineSaludoHor"
+        app:layout_constraintStart_toStartOf="@+id/guidelineSaludoVert"
+        app:layout_constraintTop_toTopOf="@id/guidelineSaludoHor" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineSaludoMsjHor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent" />
+
+    <TextView
+        android:id="@+id/saludoMsj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tienes 3 tareas pendientes"
+        app:layout_constraintBottom_toBottomOf="@id/guidelineSaludoMsjHor"
+        app:layout_constraintEnd_toEndOf="@id/guidelineSaludoMsjHor"
+        app:layout_constraintStart_toStartOf="@+id/guidelineSaludoVert"
+        app:layout_constraintTop_toTopOf="@id/guidelineSaludoMsjHor" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineBtnOptions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.13"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineTodasBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent" />
+
+    <Button
+        android:id="@+id/TodasBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Todas"
+        app:layout_constraintStart_toEndOf="@id/guidelineTodasBtn"
+        app:layout_constraintTop_toBottomOf="@+id/guidelineBtnOptions"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelinePendientesBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent" />
+
+    <Button
+        android:id="@+id/PendientesBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pendientes"
+        app:layout_constraintStart_toEndOf="@id/guidelinePendientesBtn"
+        app:layout_constraintTop_toBottomOf="@+id/guidelineBtnOptions"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineCompletadasBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.63"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent" />
+
+    <Button
+        android:id="@+id/CompletadasBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Completadas"
+        app:layout_constraintStart_toEndOf="@id/guidelineCompletadasBtn"
+        app:layout_constraintTop_toBottomOf="@+id/guidelineBtnOptions"
+        />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guidelinetasks"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.22"
+        />
+
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkbox1"
+        app:layout_constraintTop_toBottomOf="@id/guidelinetasks"
+        app:layout_constraintStart_toEndOf="@id/guidelineSaludoVert"
+        />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkbox2"
+        app:layout_constraintTop_toBottomOf="@id/checkbox1"
+        app:layout_constraintStart_toEndOf="@id/guidelineSaludoVert"
+        />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkbox3"
+        app:layout_constraintTop_toBottomOf="@id/checkbox2"
+        app:layout_constraintStart_toEndOf="@id/guidelineSaludoVert"
+        />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkbox4"
+        app:layout_constraintTop_toBottomOf="@id/checkbox3"
+        app:layout_constraintStart_toEndOf="@id/guidelineSaludoVert"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
